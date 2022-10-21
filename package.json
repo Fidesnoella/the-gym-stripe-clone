@@ -65,7 +65,7 @@
     "yaml": "^1.10.2"
   },
   "scripts": {
-    "build": "tailwindcss -i ./src/style.css -o ./dist/main.css",
+    "buildcss": "tailwindcss -i ./src/style.css -o ./dist/main.css",
     "watch": "tailwindcss -i ./src/style.css -o ./dist/main.css --watch"
   },
   "keywords": [],
