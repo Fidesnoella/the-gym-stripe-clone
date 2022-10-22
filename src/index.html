@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="../dist/main.css" rel="stylesheet" />
+    <title>Stripe</title>
+  </head>
+  <body class="font-sans">
+    <div class="relative">
+      <div
+        class="absolute -z-40 top-0 left-0 w-full -skew-y-12 -translate-y-60 h-full bg-gradient-to-t from-Cyan via-yellow to-lightPurple"
+      ></div>
+      <nav class="flex items-center mt-8 justify-between mx-10">
+        <div>
+          <img src="../dist/image/logo.svg" alt="logo" />
+        </div>
+        <div
+          class="rounded-2xl outline-none pt-1 pr-3 pb-1 pl-4 bg-buttonColor hover:bg-white hover:bg-opacity-60"
+        >
+          <a href="#" class="flex gap-2 group items-center py-1 text-white"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
+        </div>
+      </nav>
+      <div class="pt-20 space-y-5 mx-5 sm:mx-10">
+        <h1
+          class="w-full z-2 text-chocolate font-bold text-4xl ssm:text-5xl tracking-3 leading-tight"
+        >
+          Financial<br />
+          infrastructure<br />
+          for the internet
+        </h1>
+        <p class="text-lightslate text-lg font-light">
+          Millions of companies of all sizes—from startups to Fortune 500s—use
+          Stripe’s software and APIs to accept payments, send payouts, and
+          manage their businesses online.
+        </p>
+        <div
+          class="mt-5 flex flex-col space-y-3 ssm:flex-row space-x-0 gap-3 smm:space-x-5"
+        >
+          <button
+            class="flex w-32 gap-2 group items-center bg-lightBlack text-white outline-none text-base font-bold hover:bg-opacity-80 border-none rounded-2xl pl-2 ssm:pl-4 pr-1 smm:pr-3 pt-2 pb-2"
+          >
+            <span>Start now</span>
+            <span class="w-5 flex items-center">
+              <span
+                class="hidden w-4 h-4 transition-all duration-300 -translate-x-full group-hover:translate-x-0 group-hover:inline-block"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                  />
+                </svg>
+              </span>
+              <span
+                class="w-4 h-4 group-hover:hidden transition-all duration-300 flex items-center"
+              >
+                <img src="../dist/image/chevron_white.svg" alt="" />
+              </span>
+            </span>
+          </button>
+          <button
+            class="flex gap-2 group items-center text-lightBlack text-base font-bold hover:text-opacity-80"
+          >
+            <span>Contact Sales</span>
+            <span class="w-5 flex items-center">
+              <span
+                class="hidden w-4 h-4 transition-all duration-300 -translate-x-full group-hover:translate-x-0 group-hover:inline-block"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                  />
+                </svg>
+              </span>
+              <span
+                class="w-4 h-4 group-hover:hidden transition-all duration-300 flex items-center"
+              >
+                <img src="../dist/image/chevron.svg" alt="" />
+              </span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="grid grid-rows-2 mt-20 gap-y-14 mx-10 items-center md:grid-rows-0 md:grid-cols-2"
+    >
+      <div class="grid grid-cols-2 gap-10">
+        <div>
+          <img src="../dist/image/instacart.svg" alt="instacart" />
+        </div>
+        <div>
+          <img src="../dist/image/sales.svg" alt="salesforce" />
+        </div>
+        <div>
+          <img src="../dist/image/amazon.svg" alt="amazon" />
+        </div>
+        <div>
+          <img src="../dist/image/slack.svg" alt="slack" />
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-10">
+        <div>
+          <img src="../dist/image/shopify.svg" alt="shopify" />
+        </div>
+        <div>
+          <img src="../dist/image/google.svg" alt="google" />
+        </div>
+        <div>
+          <img src="../dist/image/lyft.svg" alt="lyft" />
+        </div>
+        <div>
+          <img src="../dist/image/zoom.svg" alt="zoom" />
+        </div>
+      </div>
+    </div>
+    <div class="mt-20 pt-14 bg-light">
+      <div class="px-10 space-y-5">
+        <h2 class="text-skyBlue text-lg font-bold">Unified platform</h2>
+        <h1 class="text-lightBlack text-4xl font-bold">
+          A fully integrated suite of payments products
+        </h1>
+        <p class="text-lightslate text-lg">
+          We bring together everything that’s required to build websites and
+          apps that accept payments and send payouts globally. Stripe’s products
+          power payments for
+          <span
+            class="text-skyBlue hover:text-lightBlack cursor-pointer font-bold"
+          >
+            online and in-person retailers</span
+          >,<span
+            class="text-skyBlue hover:text-lightBlack cursor-pointer font-bold"
+          >
+            subscriptions businesses</span
+          >,
+          <span
+            class="text-skyBlue hover:text-lightBlack cursor-pointer font-bold"
+            >software platforms and marketplaces</span
+          >
+          , and everything in between.
+        </p>
+        <p class="text-lightslate text-lg">
+          We also help companies
+          <span
+            class="text-skyBlue hover:text-lightBlack cursor-pointer font-bold"
+          >
+            beat fraud </span
+          >,
+          <span
+            class="text-skyBlue hover:text-lightBlack cursor-pointer font-bold"
+          >
+            send invoices</span
+          >,
+          <span
+            class="text-skyBlue hover:text-lightBlack cursor-pointer font-bold"
+          >
+            issue virtual and physical cards</span
+          >,
+          <span
+            class="text-skyBlue hover:text-lightBlack cursor-pointer font-bold"
+          >
+            reduce friction at checkout</span
+          >
+          ,
+          <span
+            class="text-skyBlue hover:text-lightBlack cursor-pointer font-bold"
+          >
+            get financing</span
+          >
+          ,
+          <span
+            class="text-skyBlue hover:text-lightBlack cursor-pointer font-bold"
+            >manage business spend,</span
+          >
+          and much more.
+        </p>
+        <button
+          class="flex gap-2 group items-center bg-skyBlue text-white outline-none text-base font-bold hover:bg-lightBlack border-none rounded-2xl pl-2 lsm:pl-4 pr-1 lsm:pr-3 pt-2 pb-2"
+        >
+          <span>Start with payments</span>
+          <span class="w-5 flex items-center">
+            <span
+              class="hidden w-4 h-4 transition-all duration-300 -translate-x-full group-hover:translate-x-0 group-hover:inline-block"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                />
+              </svg>
+            </span>
+            <span
+              class="w-4 h-4 group-hover:hidden transition-all duration-300 flex items-center"
+            >
+              <img src="../dist/image/chevron_white.svg" alt="chevron" />
+            </span>
+          </span>
+        </button>
+      </div>
+      <div class="hidden md:grid grid-cols-3 gap-10 pt-10">
+        <img src="../dist/image/v-card.png" alt="visa card" />
+        <img src="../dist/image/payment.png" alt="payment" />
+        <img
+          src="../dist/image/gatoroshi.png"
+          alt="small phone"
+          class="-mt-24"
+        />
+        <img
+          src="../dist/image/footer-phone .png"
+          alt="footer phone"
+          class="-mt-20 pl-5"
+        />
+        <img
+          src="../dist/image/dashboard.png"
+          alt="dashboard"
+          class="grid col-span-2"
+        />
+      </div>
+      <div class="md:hidden grid grid-cols-3 grid-rows-3 gap-y-3 gap-x-3 px-2">
+        <img
+          class="row-start-2 col-start-2 h-full"
+          src="../dist/image/v-card.png"
+          alt="visa card"
+        />
+        <img
+          class="col-start-3 row-start-1 row-end-3 h-full"
+          src="../dist/image/gatoroshi.png"
+          alt="small phone"
+          class=""
+        />
+        <img
+          class="row-start-2 row-end-4 h-full"
+          src="../dist/image/footer-phone .png"
+          alt="phone"
+        />
+        <img
+          src="../dist/image/payment.png"
+          alt="payment card"
+          class="col-start-2 col-end-4 row-start-3"
+        />
+        <img
+          src="../dist/image/dashboard.png"
+          alt="dashboard"
+          class="col-start-1 col-span-4 row-start-4"
+        />
+      </div>
+    </div>
+    <div
+      class="grid md:grid-cols-2 gap-5 pt-24 pb-24 -mt-9 md:-mt-14 w-full relative px-0 md:px-20"
+    >
+      <!-- .. -->
+      <div class="absolute -skew-y-6 w-full bg-lightBlack h-full top-0"></div>
+      <div class="mx-10 space-y-3 items-center relative">
+        <h2 class="text-lg text-indigo font-bold">Designed for developers</h2>
+        <h1 class="text-white font-bold text-3xl">
+          The world’s most powerful and easy-to-use APIs
+        </h1>
+        <p class="text-lg text-lightBlue font-medium">
+          We agonize over the right abstractions so your teams don’t need to
+          stitch together disparate systems or spend months integrating payments
+          functionality.
+        </p>
+        <button
+          class="flex gap-2 group items-center bg-indigo text-lightBlack text-base font-bold hover:bg-white outline-none border-none rounded-2xl pl-4 pr-3 pt-2 pb-2"
+        >
+          <span>Read the docs</span>
+          <span class="w-5 flex items-center">
+            <span
+              class="hidden w-4 h-4 transition-all duration-300 -translate-x-full group-hover:translate-x-0 group-hover:inline-block"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                />
+              </svg>
+            </span>
+            <span
+              class="w-4 h-4 group-hover:hidden transition-all duration-300 flex items-center"
+            >
+              <img src="../dist/image/chevron.svg" alt="chevron" />
+            </span>
+          </span>
+        </button>
+        <div class="grid md:grid-cols-2 pt-5 gap-5">
+          <div class="grid gap-3">
+            <img src="../dist/image/tools.png" alt="tools" />
+            <h1 class="text-white text-base font-bold">
+              Tools for every stack
+            </h1>
+            <p class="text-base text-lightBlue font-medium">
+              We offer client and server libraries in everything from React and
+              PHP to .NET and iOS.
+            </p>
+            <button
+              class="flex gap-2 group items-center text-indigo text-base font-bold hover:text-white"
+            >
+              <span>See libraries</span>
+              <span class="w-5 flex items-center">
+                <span
+                  class="hidden w-4 h-4 transition-all duration-300 -translate-x-full group-hover:translate-x-0 group-hover:inline-block"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+                <span
+                  class="w-4 h-4 group-hover:hidden transition-all duration-300 flex items-center"
+                >
+                  <img src="../dist/image/chevronvarient.svg" alt="" />
+                </span>
+              </span>
+            </button>
+          </div>
+          <div class="grid gap-3">
+            <img src="../dist/image/tools.png" alt="tools" />
+            <h1 class="text-white text-base font-bold">
+              Prebuilt integrations
+            </h1>
+            <p class="text-base text-lightBlue font-medium">
+              Use integrations for systems like Shopify, WooCommerce, NetSuite,
+              and more
+            </p>
+            <button
+              class="flex gap-2 group items-center text-indigo text-base font-bold hover:text-white"
+            >
+              <span>Explore partners</span>
+              <span class="w-5 flex items-center">
+                <span
+                  class="hidden w-4 h-4 transition-all duration-300 -translate-x-full group-hover:translate-x-0 group-hover:inline-block"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+                <span
+                  class="w-4 h-4 group-hover:hidden transition-all duration-300 flex items-center"
+                >
+                  <img src="../dist/image/chevronvarient.svg" alt="" />
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="ml-5 mr-5 relative">
+        <img src="../dist/image/powerful.png" alt="stripe payment code" />
+      </div>
+    </div>
+
+    <!-- Why Stripe -->
+    <div class="px-10 md:px-20 bg-white relative z-20 -skew-y-6">
+      <div
+        class="w-6 md:w-28 h-10 bg-indigo bg-opacity-60 absolute bottom-6 left-0"
+      ></div>
+      <div
+        class="w-16 md:w-44 h-10 bg-purple bg-opacity-95 absolute -bottom-0 left-0"
+      ></div>
+      <div
+        class="w-16 md:w-44 h-10 bg-indigo bg-opacity-95 absolute -top-0 right-0"
+      ></div>
+      <div
+        class="w-6 md:w-28 h-10 bg-purple bg-opacity-60 absolute top-6 right-0"
+      ></div>
+
+      <div class="skew-y-6 py-24 grid gap-y-10">
+        <div class="text-skyBlue text-lg font-bold">Why Stripe</div>
+        <div class="font-bold text-lightBlack text-4xl">
+          A technology-first approach to payments <br />
+          and finance
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-4 space-y-8 md:space-x-10 md:space-y-0"
+        >
+          <div class="space-y-3">
+            <img src="../dist/image/metal.png" alt="metal" />
+            <h3 class="font-bold text-base text-lightBlack">
+              Close to the metal
+            </h3>
+            <p class="text-base text-lightslate font-medium">
+              From
+              <span
+                class="text-skyBlue font-bold cursor-pointer hover:text-lightBlack"
+                >direct integrations</span
+              >
+              with card networks and banks to checkout flows in the browser, we
+              operate on and optimize at every level of the financial stack.
+            </p>
+          </div>
+          <div class="space-y-3">
+            <img src="../dist/image/platform.png" alt="platform" />
+            <h3 class="font-bold text-base text-lightBlack">
+              Fastest-improving platform
+            </h3>
+            <p class="text-base text-lightslate font-medium">
+              We release
+              <span
+                class="text-skyBlue font-bold cursor-pointer hover:text-lightBlack"
+              >
+                hundreds of features</span
+              >
+              and improvements each year to help you stay ahead of industry
+              shifts. (On average, we deploy our production API 16x per day.)
+            </p>
+          </div>
+          <div class="space-y-3">
+            <img src="../dist/image/battle.png" alt="" />
+            <h3 class="font-bold text-base text-lightBlack">
+              Battle-tested reliability
+            </h3>
+            <p class="text-base text-lightslate font-medium">
+              Our systems operate with
+              <span
+                class="text-skyBlue font-bold cursor-pointer hover:text-lightBlack"
+                >99.99%+</span
+              >
+              uptime and are highly scalable and redundant. Stripe is certified
+              to the highest compliance standards.
+            </p>
+          </div>
+          <div class="space-y-3">
+            <img src="../dist/image/intelligent.png" alt="" />
+            <h3 class="font-bold text-base cursor-pointer text-lightBlack">
+              Intelligent optimizations
+            </h3>
+            <p class="text-base text-lightslate font-medium">
+              Our machine learning models train on
+              <span
+                class="text-skyBlue font-bold cursor-pointer hover:text-lightBlack"
+                >billions</span
+              >
+              of data points and help increase revenue across conversion, fraud,
+              revenue recovery, and more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="-translate-y-15">
+      <div
+        class="h-auto bg-lightBlack w-full py-32 relative bg-[url('../dist/image/earth.png')] bg-no-repeat bg-cover bg-center"
+      >
+        <div class="pt-24 space-y-10">
+          <div class="w-full md:w-1/2 pl-10 grid gap-y-5">
+            <h2 class="text-lg text-indigo font-bold">Global scale</h2>
+            <h1 class="text-white font-bold text-3xl">
+              The backbone for internet business
+            </h1>
+            <p class="text-lg text-lightBlue font-medium">
+              For ambitious companies around the world, Stripe makes moving
+              money as simple, borderless, and programmable as the rest of the
+              internet. Our teams are based in dozens of offices around the
+              world and we process hundreds of billions of dollars each year for
+              <span
+                class="text-indigo font-bold relative hover:text-white cursor-pointer"
+                >startups to Fortune 500s</span
+              >.
+            </p>
+          </div>
+          <div class="grid md:grid-cols-4 gap-5 px-10">
+            <div class="grid gap-y-4">
+              <h1
+                class="text-white font-bold text-3xl border-indigo border-solid border-l-2 pl-4"
+              >
+                250M+
+              </h1>
+              <p class="text-base text-lightBlue font-medium">
+                API requests per day,peaking at 13,000 requests a second
+              </p>
+            </div>
+            <div class="grid gap-y-4">
+              <h1
+                class="text-white font-bold text-3xl border-indigo border-solid border-l-2 pl-4"
+              >
+                90%
+              </h1>
+              <p class="text-base text-lightBlue font-medium">
+                of U.S. adults have bought from businesses using Stripe.
+              </p>
+            </div>
+            <div class="grid gap-y-4">
+              <h1
+                class="text-white font-bold text-3xl border-indigo border-solid border-l-2 pl-4"
+              >
+                135+
+              </h1>
+              <p class="text-base text-lightBlue font-medium">
+                currencies and payment methods supported
+              </p>
+            </div>
+            <div class="grid gap-y-4">
+              <h1
+                class="text-white font-bold text-3xl border-indigo border-solid border-l-2 pl-4"
+              >
+                35+
+              </h1>
+              <p class="text-base text-lightBlue font-medium">
+                countries with local acquiring, optimizing acceptance rates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="relative z-20 -translate-y-10 bg-white mx-10 grid md:grid-cols-4 gap-y-4 mb-44"
+    >
+      <div class="grid md:col-span-2 gap-y-4">
+        <h2 class="text-2xl font-bold text-lightBlack">
+          Ready to get started?
+        </h2>
+        <p class="text-lg text-lightslate font-normal">
+          Explore
+          <span
+            class="font-bold text-skyBlue cursor-pointer hover:text-lightBlack"
+            >Stripe Payments</span
+          >, or create an account instantly and start accepting payments. You
+          can also contact us to design a custom package for your business.
+        </p>
+        <div
+          class="flex flex-col space-y-3 ssm:flex-row space-x-0 gap-3 smm:space-x-5"
+        >
+          <button
+            class="flex gap-2 group items-center bg-skyBlue text-white outline-none text-base font-bold hover:bg-lightBlack border-none rounded-2xl pl-4 pr-3 pt-2 pb-2"
+          >
+            <span>Start now</span>
+            <span class="w-5 flex items-center">
+              <span
+                class="hidden w-4 h-4 transition-all duration-300 -translate-x-full group-hover:translate-x-0 group-hover:inline-block"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                  />
+                </svg>
+              </span>
+              <span
+                class="w-4 h-4 group-hover:hidden transition-all duration-300 flex items-center"
+              >
+                <img src="../dist/image/chevron_white.svg" alt="" />
+              </span>
+            </span>
+          </button>
+          <button
+            class="flex gap-2 group items-center text-skyBlue text-base font-bold hover:text-lightBlack"
+          >
+            <span>Contact Sales</span>
+            <span class="w-5 flex items-center">
+              <span
+                class="hidden w-4 h-4 transition-all duration-300 -translate-x-full group-hover:translate-x-0 group-hover:inline-block"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                  />
+                </svg>
+              </span>
+              <span
+                class="w-4 h-4 group-hover:hidden transition-all duration-300 flex items-center"
+              >
+                <img src="../dist/image/chevron.svg" alt="" />
+              </span>
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="space-y-3">
+        <img src="../dist/image/price.png" alt="price" />
+        <h3 class="font-bold text-base text-lightBlack">
+          Always know what you pay
+        </h3>
+        <p class="font-normal text-lightslate text-base">
+          Integrated per-transaction pricing with no hidden fees.
+        </p>
+        <button
+          class="flex gap-2 group items-center text-skyBlue text-base font-bold hover:text-lightBlack"
+        >
+          <span>Pricing details</span>
+          <span class="w-5 flex items-center">
+            <span
+              class="hidden w-4 h-4 transition-all duration-300 -translate-x-full group-hover:translate-x-0 group-hover:inline-block"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                />
+              </svg>
+            </span>
+            <span
+              class="w-4 h-4 group-hover:hidden transition-all duration-300 flex items-center"
+            >
+              <img src="../dist/image/chevron.svg" alt="" />
+            </span>
+          </span>
+        </button>
+      </div>
+      <div class="space-y-3">
+        <img src="../dist/image/reference.png" alt="reference" />
+        <h3 class="font-bold text-base text-lightBlack">
+          Start your integration
+        </h3>
+        <p class="font-normal text-lightslate text-base">
+          Get up and running with Stripe in as little as 10 minutes.
+        </p>
+        <button
+          class="flex gap-2 group items-center text-skyBlue text-base font-bold hover:text-lightBlack"
+        >
+          <span>API reference</span>
+          <span class="w-5 flex items-center">
+            <span
+              class="hidden w-4 h-4 transition-all duration-300 -translate-x-full group-hover:translate-x-0 group-hover:inline-block"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                />
+              </svg>
+            </span>
+            <span
+              class="w-4 h-4 group-hover:hidden transition-all duration-300 flex items-center"
+            >
+              <img src="../dist/image/chevron.svg" alt="chevron" />
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <footer class="mt-32 relative">
+      <div class="absolute bg-light w-full -skew-y-6 h-52 -top-20">
+        <div
+          class="w-10 h-10 bg-indigo bg-opacity-60 absolute -top-10 right-0"
+        ></div>
+        <div
+          class="w-4 h-10 bg-purple bg-opacity-95 absolute -top-6 right-0"
+        ></div>
+        <div
+          class="w-4 h-10 bg-indigo bg-opacity-60 absolute -top-10 left-0"
+        ></div>
+        <div
+          class="w-10 h-10 bg-purple bg-opacity-95 absolute -top-6 left-0"
+        ></div>
+      </div>
+      <div
+        class="gap-y-5 grid md:grid-cols-4 absolute h-auto py-16 md:py-32 w-full text-lightBlack md:px-20 text-base font-normal bg-light"
+      >
+        <div class="mx-10">
+          <div class="grid gap-y-2">
+            <img src="../dist/image/logoblack.svg" alt="" />
+            <button class="flex gap-3 items-center">
+              <i class="fa-solid fa-location-arrow"></i>
+              <span>United States</span>
+            </button>
+            <button class="flex gap-3 items-center">
+              <i class="fa-solid fa-comment"></i>
+              <span>English (United States)</span>
+            </button>
+          </div>
+          <div class="pt-3">
+            <p>&copy; 2022 Stripe, Inc.</p>
+          </div>
+        </div>
+        <div
+          class="hidden md:grid col-span-3 gap-10 grid-cols-2 md:grid-cols-3"
+        >
+          <div>
+            <ul class="grid gap-y-3">
+              <h1 class="font-bold">Products</h1>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Atlas</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Billing</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Capital</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Checkout</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Climate</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Connect</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Corporate Card</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Data Pipeline</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Elements</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Financial Connections</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Identity</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Invoicing</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Issuing</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Link</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Payments</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Payments Links</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Payouts</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Pricing</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Radar</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Revenue Recognition</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Sigma</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Tax</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Terminal</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Treasury</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="grid gap-y-3">
+              <h1 class="font-bold">Use Cases</h1>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Ecommerce</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">SaaS</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Marketplaces</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Embedded Finance</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Platforms</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Creator Economy</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Crypto</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Global Businesses</a>
+              </li>
+            </ul>
+            <ul class="grid gap-y-3 pt-8">
+              <h1 class="font-bold">Integration & Custom Solutions</h1>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">App Marketplace</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Partner Ecosystem</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Professional Services</a>
+              </li>
+            </ul>
+            <ul class="grid gap-y-3 pt-8">
+              <h1 class="font-bold">Developers</h1>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Documentation</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">API Reference</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">API Status</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">API Changelog</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Build a Stripe App</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="grid gap-y-3">
+              <h1 class="font-bold">Resources</h1>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Support Center</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Support Plans</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Guides</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Customer Stories</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Blog</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Annual Conference</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Privacy & Terms</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Licenses</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">COVID-19</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Sitemap</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Cookies settings</a>
+              </li>
+            </ul>
+            <ul class="grid gap-y-3 pt-8">
+              <h1 class="font-bold">Company</h1>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Jobs</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Newsroon</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Stripe Press</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Become a Partner</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid gap-5 grid-cols-2 md:hidden pl-10 pr-10">
+          <div>
+            <ul class="grid gap-y-3">
+              <h1 class="font-bold">Products</h1>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Atlas</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Billing</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Capital</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Checkout</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Climate</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Connect</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Corporate Card</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Data Pipeline</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Elements</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#"
+                  >Financial <br />
+                  Connections</a
+                >
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Identity</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Invoicing</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Issuing</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Link</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Payments</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Payments Links</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Payouts</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Pricing</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Radar</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Revenue Recognition</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Sigma</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Tax</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Terminal</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Treasury</a>
+              </li>
+            </ul>
+            <ul class="grid gap-y-3 pt-8">
+              <h1 class="font-bold">Resources</h1>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Support Center</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Support Plans</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Guides</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Customer Stories</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Blog</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Annual Conference</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Privacy & Terms</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Licenses</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">COVID-19</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Sitemap</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Cookies settings</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="grid gap-y-3">
+              <h1 class="font-bold">Use Cases</h1>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Ecommerce</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">SaaS</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Marketplaces</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Embedded Finance</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Platforms</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Creator Economy</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Crypto</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Global Businesses</a>
+              </li>
+            </ul>
+            <ul class="grid gap-y-3 pt-16">
+              <h1 class="font-bold">Integration & Custom Solutions</h1>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">App Marketplace</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Partner Ecosystem</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Professional Services</a>
+              </li>
+            </ul>
+            <ul class="grid gap-y-3 pt-16">
+              <h1 class="font-bold">Developers</h1>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Documentation</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">API Reference</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">API Status</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">API Changelog</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Build a Stripe App</a>
+              </li>
+            </ul>
+            <ul class="grid gap-y-3 pt-16">
+              <h1 class="font-bold">Company</h1>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Jobs</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Newsroon</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Stripe Press</a>
+              </li>
+              <li class="cursor-pointer hover:opacity-60">
+                <a href="#">Become a Partner</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
